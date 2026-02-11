@@ -5,51 +5,51 @@
 - **Nome:** Curso Completo de Banco de Dados Oracle SQL e PL/SQL
 - **Duração:** 16,5 horas
 - **Link:** https://compassuol.udemy.com/course/curso-completo-de-oracle/
+- **Arquivos Fornecidos:** `sql/course_base_files`
 - **Certificado de conclusão:**
 
 
-## Seção 01 - Instalações Necessárias
+## Seção 01 - Instalações Relacionadas
 
 Todas as configurações consideram a execução no `Ubuntu 24.04.3 LTS`
 
 ### 1. Banco de Dados Oracle XE 11g
 
-#### Imagem utilizada
+- Imagem utilizada:
 A imagem mais utilizada e estável para Oracle XE 11g é a do repositório wnameless (https://github.com/wnameless/docker-oracle-xe-11g)
 
-#### Baixar a imagem
+- Baixar a imagem:
 ```bash
 docker pull wnameless/oracle-xe-11g-r2
 ```
 
-#### Executar o container
-##### Primeira Inicialização
+- Executar o container: Primeira Inicialização
 ```bash
 docker run -d --name oracle-xe11 --shm-size=2g -p 1521:1521 -p 8080:8080 -e ORACLE_ALLOW_REMOTE=true -v oracle-xe-data:/u01/app/oracle/oradata wnameless/oracle-xe-11g-r2
 ```
-##### Demais Inicializações
+- Executar o container: Demais Inicializações
 ```bash
 docker start oracle-xe11
 ```
-##### Para Container
+- Executar o container: Para Container
 ```bash
 docker stop oracle-xe11
 ```
-#### Conexão ao Banco
-- HOST: localhost
-- PORT: 1521
-- SID: xe
-- USER: system
-- PASS: oracle
+- Conexão ao Banco
+  - HOST: localhost
+  - PORT: 1521
+  - SID: xe
+  - USER: system
+  - PASS: oracle
 
-#### Acessar o Oracle APEX:
-- URL: http://localhost:8080/apex/apex_admin
-- username: ADMIN
-- password: admin
+- Acessar o Oracle APEX:
+  - URL: http://localhost:8080/apex/apex_admin
+  - username: ADMIN
+  - password: admin
 
 *Obs.: senha sugerida para troca após o primeiro acesso: `Adm!n1234567890`*
 
-#### Entrar no container e usar o SQL*Plus
+- Entrar no container e usar o SQL*Plus
 ```bash
 # entra no container com bash
 docker exec -it oracle-xe11 bash
@@ -59,27 +59,34 @@ su - oracle
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus / as sysdba
 ```
 
-Alterar senha de SYS/SYSTEM (opcional)
-
-Dentro do SQL*Plus:
+- Alterar senha de SYS/SYSTEM (opcional)
+   - Dentro do SQL*Plus:
 ```sql
 alter user sys identified by novaSenha;
 alter user system identified by novaSenha;
 ```
 
 ### 2. SQL Tools
-Opções:
-1. DBeaver (*recomendado*)
+
+**Opções:**
+
+1. **DBeaver**
 ```bash
 sudo snap install dbeaver-ce
 ```
-1. VS Code + SQLTools Extension
-   1. SQLTools (Matheus Teixeira) + SQLTools Oracle Driver (hurly)
+2. **Oracle SQL Developer Extension for VSCode**
+
+```bash
+# Instalação: abra o VS Code Quick Open (Ctrl+P), cole o comando à seguir, pressione enter e siga os passos de instalação propostos.
+
+ext install Oracle.sql-developer
+```
+Link: https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer
 
 
 ### 3. Oracle SQL Developer
 
-#### Instalar o JDK (Java Development Kit)
+**Instalar o JDK (Java Development Kit)**
 
 O SQL Developer requer um JDK instalado. A opção recomendada para é o **OpenJDK 17**:
 ```bash
@@ -95,7 +102,7 @@ sudo apt install openjdk-17-jdk
 #    R: /home/user_name/.sdkman/candidates/java/17.0.18-amzn
 ```
 
-#### Baixar e instalar o SQL Developer
+**Baixar e instalar o SQL Developer**
 1. Baixe o arquivo versão zip em https://www.oracle.com/br/database/sqldeveloper/technologies/download/#sqldev-install-linux
 2. Descompacte o conteúdo:
 ```bash
@@ -162,16 +169,6 @@ update-desktop-database ~/.local/share/applications 2>/dev/null || true
 # ou simplesmente reinicializar a sessão
 ```
 
-### 4. Oracle SQL Developer Extension for VSCode
-
-Excelente Recomendação!
-
-__Instalação__: abra o VS Code Quick Open (Ctrl+P), cole o comando à seguir e pressione enter.
-```bash
-ext install Oracle.sql-developer
-```
-Link: https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer
-
 ## Seção 01 - Configurações Iniciais
 
 Como boa prática, criar usuário e tablespace específico para o desenvolvimento do curso (não usar o admin).
@@ -200,3 +197,19 @@ Criar tabelas e inserir registros conforme arquivo `sql/secao_01/s01.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_02/s02.sql`
+
+
+## Seção 03 - Restringindo e Ordenando Dados
+- Revisão teórica
+  - Limitando as linhas selecionadas
+    - clausula WHERE
+    - Condições
+      - composição
+      - strings de caractere e Datas
+      - operadores de comparação: =, >, >=, <. <=, <> ou !=
+      - outros operadores de comparação: BETWEEN...AND..., IN, LIKE, IS NULL
+      - precedência
+  - Ordenação
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_03/s03.sql`
