@@ -162,14 +162,41 @@ update-desktop-database ~/.local/share/applications 2>/dev/null || true
 # ou simplesmente reinicializar a sessão
 ```
 
+### 4. Oracle SQL Developer Extension for VSCode
+
+Excelente Recomendação!
+
+__Instalação__: abra o VS Code Quick Open (Ctrl+P), cole o comando à seguir e pressione enter.
+```bash
+ext install Oracle.sql-developer
+```
+Link: https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer
+
 ## Seção 01 - Configurações Iniciais
 
 Como boa prática, criar usuário e tablespace específico para o desenvolvimento do curso (não usar o admin).
 
-Utilizar o conteúdo do arquivo `sql/section_1/script_criacao_tablespace.txt` para criação de:
+Utilizar o conteúdo do arquivo `sql/secao_01/s01_script_criacao_tablespace.txt` para criação de:
 - Cria tablespace p/ dados
 - Cria usuario (dono das tabelas)
 - Cria e define a "role" de privilegios (perfil)
 - Atribuir perfil ao novo usuário
 
-Criar tabelas e inserir registros conforme arquivo `sql/section_1/Criacao_Tabelas.sql`
+Criar tabelas e inserir registros conforme arquivo `sql/secao_01/s01.sql`
+
+
+## Seção 02 - Execução de Comandos SQL Básicos: SELECT
+- Revisão teórica
+  - Escrevendo comandos
+  - Padrões de cabeçalhos de colunas
+  - Expressões Aritiméticas
+  - Precedência de operadores
+  - Definindo um valor nulo
+  - Definindo um Alias de coluna
+  - Operador de Concatenação
+  - String de caracteres literais
+  - Linhas Duplicadas
+  - Tipos
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_02/s02.sql`
