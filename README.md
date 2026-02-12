@@ -5,7 +5,9 @@
 - **Nome:** Curso Completo de Banco de Dados Oracle SQL e PL/SQL
 - **Duração:** 16,5 horas
 - **Link:** https://compassuol.udemy.com/course/curso-completo-de-oracle/
-- **Arquivos Fornecidos:** `sql/course_base_files`
+- **Arquivos fornecidos pelo curso**
+  - **scripts**: `sql/course_base_files`
+  - **ebook**: `ebook/Oracle+SQL+Ebook.pdf`
 - **Certificado de conclusão:**
 
 
@@ -213,3 +215,18 @@ Anotações e exemplos contidos no arquivo `sql/secao_02/s02.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_03/s03.sql`
+
+
+## Seção 04 - Funções Básicas
+- Revisão teórica
+  - descrever os vários tipos de funções disponĩveis em SQL
+  - utilizar vários tipos de funções em comandos SELECT
+    - Tipo Caractere: CONCAT, INITCAP, INSTR, LENGTH, LOWER, LPAD, REPLACE, RPAD, SUBSTR e UPPER
+    - Tipo Numérica: ROUND, TRUNC e MOD
+    - Tipo Data: SYSDATE, MONTHS_BETWEEN, ADD_MONTHS, NEXT_DAY, LAST_DAY, ROUND(D,'MONTH') e TRUNC(D,'MONTH')
+    - Tipo Transformação: TO_CHAR
+    - Tipo Gerais: NVL e NVL2
+    - Tipo Expressão Condicional: CASE e DECODE
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_04/s04.sql`
