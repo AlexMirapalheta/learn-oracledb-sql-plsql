@@ -230,3 +230,19 @@ Anotações e exemplos contidos no arquivo `sql/secao_03/s03.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_04/s04.sql`
+
+
+## Seção 05 - Exibindo Dados a Partir de Multiplas Tabelas
+- Revisão teórica
+  - obtendo dados a partir de multiplas tabelas
+  - o que é um JOIN ?
+  - produto cartesiano
+  - qualificando nomes de colunas ambíguas
+  - tipos de JOINS
+    - Equi join
+    - Non equi join
+    - Outer join
+    - Self join
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_05/s05.sql`
