@@ -90,7 +90,7 @@ Link: https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer
 
 **Instalar o JDK (Java Development Kit)**
 
-O SQL Developer requer um JDK instalado. A opção recomendada para é o **OpenJDK 17**:
+O SQL Developer requer um JDK instalado. A opção recomendada é o **OpenJDK 17**:
 ```bash
 sudo apt update
 sudo apt install openjdk-17-jdk
@@ -246,3 +246,20 @@ Anotações e exemplos contidos no arquivo `sql/secao_04/s04.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_05/s05.sql`
+
+## Seção 06 - Agregando Dados Utilizando Funções de Grupo
+- Revisão Teórica
+  - o que são funções de grupo
+  - tipos de funções de grupo
+    - AVG
+    - COUNT
+    - MAX
+    - MIN
+    - SUM
+  - sintaxe básica
+    - descrever o uso de funções de grupo
+    - agrupar dados utilizando GROUP BY
+    - incluir ou excluir linhas agrupadas utilizando HAVING
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_06/s06.sql`
