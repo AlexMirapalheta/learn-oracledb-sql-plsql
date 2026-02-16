@@ -277,7 +277,7 @@ Anotações e exemplos contidos no arquivo `sql/secao_06/s06.sql`
 Anotações e exemplos contidos no arquivo `sql/secao_07/s07.sql`
 
 
-## Seção 07 - Linguagem de Manipulação de Dados (DML)
+## Seção 08 - Linguagem de Manipulação de Dados (DML)
 - Revisão Teórica
   - descrever comandos DML
   - inserir linhas em uma tabala
@@ -295,3 +295,28 @@ Anotações e exemplos contidos no arquivo `sql/secao_07/s07.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_08/s08.sql`
+
+
+## Seção 09 - Criando e Gerenciando Tabelas
+- Revisão Teórica
+  - Convenções de nome
+  - Comando CREATE TABLE
+  - Consultando o dicionário de dados
+  - Tipos de Dados
+  - Comando ALTER TABLE
+    - Adicionando nova coluna
+    - Modificando uma coluna
+    - Renomeando uma coluna
+    - Excluindo uma coluna
+    - Renomeaando a tabela
+    - Desabilitando uma coluna
+    - Excluindo colunas não usadas
+  - Comando DROP TABLE
+  - Comando COMMENT
+    - inserir comentario na tabela
+    - visualizar comentários de uma tabela
+    - inserir comentario na coluna
+    - visualizar comentários de uma coluna
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_09/s09.sql`
