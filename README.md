@@ -263,3 +263,14 @@ Anotações e exemplos contidos no arquivo `sql/secao_05/s05.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_06/s06.sql`
+
+
+## Seção 07 - Sub-Consultas
+- Revisão Teórica
+  - Sub-Select
+    - utilizando operadores de comparação (=, >, >=, etc).
+    - utilizando outros operadores de comparação (IN)
+    - sub-consulta na cláusula FROM
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_07/s07.sql`
