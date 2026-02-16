@@ -247,6 +247,7 @@ Anotações e exemplos contidos no arquivo `sql/secao_04/s04.sql`
 
 Anotações e exemplos contidos no arquivo `sql/secao_05/s05.sql`
 
+
 ## Seção 06 - Agregando Dados Utilizando Funções de Grupo
 - Revisão Teórica
   - o que são funções de grupo
@@ -274,3 +275,23 @@ Anotações e exemplos contidos no arquivo `sql/secao_06/s06.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_07/s07.sql`
+
+
+## Seção 07 - Linguagem de Manipulação de Dados (DML)
+- Revisão Teórica
+  - descrever comandos DML
+  - inserir linhas em uma tabala
+    - INSERT
+  - atualizar linhas de uma tabela
+    - UPDATE
+  - remover linhas de uma tabela
+    - DELETE
+    - TRUNCATE
+  - controlar transações
+    - COMMIT
+    - ROLLBACK
+    - SAVEPOINT
+    - ROLLBACK TO SAVEPOINT
+- Exemplos
+
+Anotações e exemplos contidos no arquivo `sql/secao_08/s08.sql`
