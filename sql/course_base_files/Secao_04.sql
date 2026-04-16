@@ -17,7 +17,7 @@ SELECT nome, InStr(NOME,'R') FROM TALUNO;
 SELECT nome, Length(NOME) FROM TALUNO;
 
 --
-SELECT nome, Lower(NOME) FROM TALUNO
+SELECT nome, Lower(NOME) FROM TALUNO;
 
 --
 SELECT nome, Upper(NOME) FROM TALUNO;
@@ -77,8 +77,8 @@ WHERE COD_ALUNO = 1;
 SELECT
   SALARIO,
   REPLACE(SALARIO, ',' , ''),
-  RPad(SALARIO, 10,'0'),     --Zeros a direita até 10 casas
-  LPad(SALARIO, 10,'0'),     --Zeros a esquerda até 10 casas
+  RPad(SALARIO, 10,'0'),     --Zeros a direita atï¿½ 10 casas
+  LPad(SALARIO, 10,'0'),     --Zeros a esquerda atï¿½ 10 casas
   LPad(REPLACE(SALARIO,',',''),10,'0')
 FROM TALUNO;
 
@@ -132,7 +132,7 @@ SELECT Next_Day(SYSDATE, 'QUARTA-FEIRA') AS PROXIMA_QUARTA_DATA FROM DUAL;
 SELECT Last_Day(SYSDATE) AS ULTIMO_DIA_MES FROM DUAL;
 
 --Primeiro dia do proximo mes
---até dia 15 do mes pega o primeiro dia do mes atual
+--atï¿½ dia 15 do mes pega o primeiro dia do mes atual
 --a partir do dia 16 retorna o primeiro dia do proximo mes
 SELECT Round(SYSDATE, 'MONTH') AS PRIMEIRO_DIA_PROXIMO_MES FROM DUAL;
 
@@ -141,12 +141,12 @@ SELECT Round(SYSDATE, 'MONTH') AS PRIMEIRO_DIA_PROXIMO_MES FROM DUAL;
 SELECT Trunc(SYSDATE,'MONTH') AS PRIMEIRO_DIA_MES_CORRENTE FROM DUAL;
 
 
----Formatação de data
+---Formataï¿½ï¿½o de data
 
 --Conversor to_char(data, formato)
 
 --DD -> dia do mes
-SELECT SYSDATE, To_Char(SYSDATE,'DD') FROM DUAL
+SELECT SYSDATE, To_Char(SYSDATE,'DD') FROM DUAL;
 
 --
 SELECT To_Char(SYSDATE,'DD/MM/YYYY') DATA FROM DUAL;
@@ -198,7 +198,7 @@ SELECT To_Char(SYSDATE,'DD/MM/YYYY HH24:MI:SS') DATA_HORA FROM DUAL;
 --G -> ponto
 --D -> casas decimais
 
-SELECT * FROM TALUNO
+SELECT * FROM TALUNO;
 
 SELECT Trim(To_Char(Salario,'L99999.99')) salario1, trim(To_Char(Salario,'L99G999D99')) salario2
 FROM TALUNO;
@@ -220,13 +220,13 @@ SELECT Total,
        Nvl2(DESCONTO, TOTAL, 0)
 FROM TContrato;
 
-SELECT * FROM TALUNO
+SELECT * FROM TALUNO;
 
 UPDATE TALUNO SET
 NOME = NULL
 WHERE COD_ALUNO = 5;
 
-SELECT Cod_Aluno, Nvl(Nome, 'SEM NOME') FROM TALUNO
+SELECT Cod_Aluno, Nvl(Nome, 'SEM NOME') FROM TALUNO;
 
 SELECT * FROM TALUNO;
 
@@ -250,7 +250,7 @@ SELECT NOME, Estado,
 FROM TALUNO;
 
 --
-SELECT SYSDATE AS DATA FROM DUAL
+SELECT SYSDATE AS DATA FROM DUAL;
 
 --
 SELECT NOME, ESTADO,

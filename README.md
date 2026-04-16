@@ -320,3 +320,19 @@ Anotações e exemplos contidos no arquivo `sql/secao_08/s08.sql`
 - Exemplos
 
 Anotações e exemplos contidos no arquivo `sql/secao_09/s09.sql`
+
+
+## Seção 10 - Implementando Constraints
+- Revisão Teórica
+  - O que são constraints
+  - Tipos
+  - Diretrizes
+  - Definindo (sintaxe)
+- Exemplos
+  - criar
+  - listar
+  - desabilitar
+  - habiliar
+  - excluir
+
+Anotações e exemplos contidos no arquivo `sql/secao_10/s10.sql`
