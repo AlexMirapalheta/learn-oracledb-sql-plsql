@@ -336,3 +336,25 @@ Anotações e exemplos contidos no arquivo `sql/secao_09/s09.sql`
   - excluir
 
 Anotações e exemplos contidos no arquivo `sql/secao_10/s10.sql`
+
+
+## Seção 11 - Criando Visões
+- Revisão Teórica
+  - O que é uma visão?
+  - Porquê utilizar visões?
+  - Visões Simples e Complexas
+  - Criando uma visão (sintaxe)
+- Exemplos
+  - criando view simples
+  - consultando view
+  - consultando views do usuário
+  - criando view com parametros de saída
+  - criando vier complexa
+  - criando consulta envolvendo view e tabela
+  - operação DML com view
+  - inserindo dados em tabela através de view with check option
+  - removendo registros através de view
+  - criando view somente leitura
+  - excluindo view
+
+Anotações e exemplos contidos no arquivo `sql/secao_11/s11.sql`
