@@ -358,3 +358,28 @@ Anotações e exemplos contidos no arquivo `sql/secao_10/s10.sql`
   - excluindo view
 
 Anotações e exemplos contidos no arquivo `sql/secao_11/s11.sql`
+
+
+## Seção 12 - Outros Objetos de Banco de Dados
+- Revisão Teórica
+  - O que é uma sequencia
+  - Comando CREATE SEQUENCE
+  - Criando uma sequência
+  - Indices Secundários (INDEX)
+  - Sinônimos (SYNONYM)
+- Exemplos
+  - criando uma sequencia
+  - consultando próximo valor da sequencia
+  - utilizando uma sequencia
+  - consultando sequencias do usuário
+  - consultando valor atual da sequencia
+  - alterando uma sequencia
+  - excluindo uma sequencia
+  - criando indice secundário
+  - verificando melhoria da performance (scan full table VS scan full index)
+  - listando indices do usuário
+  - apagando um indice
+  - criando um sinonimo
+  - realizando consulta utilizando o sinonimo
+
+Anotações e exemplos contidos no arquivo `sql/secao_12/s12.sql`
